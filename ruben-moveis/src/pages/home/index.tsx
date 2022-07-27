@@ -5,7 +5,9 @@ import React from 'react';
 
 const Index: NextPage = () => {
     return (
+        <>
        <NavBar />
+       </>
     )
 }
 
