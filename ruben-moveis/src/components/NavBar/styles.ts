@@ -2,7 +2,9 @@ import styled from "styled-components";
 
 export const MenuItem = styled.div`
     flex-direction: row;
-    margin: 1%;
+    padding: 20px;
+    display: flex;
+    
     text-align: center;
     a {
         cursor: pointer;
