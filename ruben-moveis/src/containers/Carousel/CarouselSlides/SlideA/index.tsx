@@ -4,7 +4,6 @@ import styled from "styled-components";
 const SContainer = styled.div`
   align-items: center;
   display: flex;
-  background-color: 
 `;
 
 const STextWrapper = styled.div`

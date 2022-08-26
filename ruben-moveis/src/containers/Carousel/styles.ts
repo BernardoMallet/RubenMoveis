@@ -8,8 +8,7 @@ interface ICarouselProps {
 }
 
 export const CarouselWrapper = styled.div`
-  margin-left: 30%;
-  margin-top: 20px;
+  margin-top: 5px;
 `;
 
 export const SCarouselWrapper = styled.div`

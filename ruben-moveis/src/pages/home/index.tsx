@@ -1,3 +1,5 @@
+import HeaderLogo from 'components/Header';
+import HeaderTop from 'components/HeaderTop';
 import NavBar from 'components/NavBar';
 import Carousel from 'containers/Carousel';
 import SlideOne from 'containers/Carousel/CarouselSlides/SlideA';
@@ -13,6 +15,8 @@ import React from 'react';
 const Index: NextPage = () => {
     return (
         <>
+       <HeaderTop />
+       <HeaderLogo />
        <NavBar />
        <Carousel>
         <SlideOne />
