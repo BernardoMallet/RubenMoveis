@@ -8,7 +8,7 @@ interface ICarouselProps {
 }
 
 export const CarouselWrapper = styled.div`
-  margin-top: 5px;
+  margin-top: 1px;
 `;
 
 export const SCarouselWrapper = styled.div`
@@ -20,6 +20,8 @@ export const SCarouselSlide = styled.div<ICarouselSlide>`
   opacity: ${props => (props.active ? 1 : 0)};
   transition: all 0.5s ease;
   width: 100%;
+  display: flex;
+  justify-content: center;
 `;
 
 export const SCarouselSlides = styled.div<ICarouselProps>`

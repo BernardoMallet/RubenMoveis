@@ -14,15 +14,15 @@ const STextWrapper = styled.div`
 
 const SlideTwo = () => (
   <SContainer>
-    <STextWrapper>
+    {/* <STextWrapper>
       <h1>Header 2</h1>
       <p>A short paragraph with some descriptive text.</p>
-    </STextWrapper>
+    </STextWrapper> */}
     <img
       src="././images/CarouselHome/Estantes de aço.JPG"
       style={{
-        maxWidth: "400px",
-        maxHeight: "200px",
+        maxWidth: "800px",
+        maxHeight: "400px",
         width: "auto",
         height: "auto",
       }}
