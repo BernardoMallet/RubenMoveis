@@ -49,9 +49,6 @@ const NavBar = () => {
               <a onClick={() => router.push("aboutUs")}>SOBRE</a>
             </MenuItem>
           </Tooltip>
-          <MenuItem>
-            <WhatsAppIcon />
-          </MenuItem>
         </Toolbar>
       </Container>
     </AppBar>

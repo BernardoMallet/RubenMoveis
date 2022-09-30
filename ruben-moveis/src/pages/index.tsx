@@ -5,7 +5,7 @@ import Home from './home';
 const Index: NextPage = () => {
   
   return (
-    <Home />
+      <Home />
   );
 }
 

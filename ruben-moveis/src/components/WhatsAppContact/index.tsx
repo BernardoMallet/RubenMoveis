@@ -1,23 +1,25 @@
+import Box from "@mui/material/Box";
+import Fab from "@mui/material/Fab";
 import React from "react";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
-const WhatsAppIcon = () => {
+const WhatsAppPopup = () => {
   return (
     <>
-      <a href="https://api.whatsapp.com/send?phone=5521999049917&text=RubenMóveis">
-        <img
-          src="././images/CarouselHome/zap.png"
-          style={{
-            maxWidth: "300px",
-            maxHeight: "60px",
-            width: "auto",
-            height: "auto",
-            position: "sticky",
-            float: "right",
-          }}
-        />
+      <a
+        style={{ cursor: "pointer" }}
+        href="https://api.whatsapp.com/send?phone=5521999049917&text=RubenMóveis"
+      >
+        <Box
+          sx={{ float: "right", marginTop: "4px", position: "fixed", right: 5  }}
+        >
+          <Fab color="success" aria-label="click">
+            <WhatsAppIcon />
+          </Fab>
+        </Box>
       </a>
     </>
   );
 };
 
-export default WhatsAppIcon;
+export default WhatsAppPopup;

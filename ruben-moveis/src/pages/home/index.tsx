@@ -12,6 +12,7 @@ import SlideSix from "containers/Carousel/CarouselSlides/SlideF";
 import { NextPage } from "next";
 import React from "react";
 import FooterSite from "components/Footer";
+import WhatsAppPopup from "components/WhatsAppContact";
 
 const Index: NextPage = () => {
   return (
@@ -19,6 +20,7 @@ const Index: NextPage = () => {
       <HeaderTop />
       <HeaderLogo />
       <NavBar />
+      <WhatsAppPopup/>
       <Carousel>
         <SlideOne />
         <SlideTwo />
