@@ -28,28 +28,40 @@ const Carousel = ({ children }: IProps) => {
   return (
     <>
       <CarouselWrapper>
-        <Box sx={{ display: "flex", justifyContent: "center" }}>
-          <SCarouselWrapper>
-            <SCarouselSlides currentSlide={currentSlide}>
-              {activeSlide}
-            </SCarouselSlides>
-          </SCarouselWrapper>
-        </Box>
         <Box
           sx={{
             justifyContent: "space-around",
             display: "flex",
             marginTop: "1%",
+            flexDirection: "row",
+            alignItems: "center"
           }}
         >
           <ArrowBackIosIcon
+            sx={{
+              cursor: "pointer",
+              height: "60px",
+              marginLeft: "5%"
+              }}
             onClick={() => {
               setCurrentSlide(
                 (currentSlide - 1 + activeSlide.length) % activeSlide.length
               );
             }}
           />
+
+          <SCarouselWrapper>
+            <SCarouselSlides currentSlide={currentSlide}>
+              {activeSlide}
+            </SCarouselSlides>
+          </SCarouselWrapper>
+
           <ArrowForwardIosIcon
+            sx={{
+              cursor: "pointer",
+              height: "60px",
+              marginRight: "5%"
+            }}
             onClick={() => {
               setCurrentSlide((currentSlide + 1) % activeSlide.length);
             }}

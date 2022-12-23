@@ -1,6 +1,8 @@
+import FooterSite from "components/Footer";
 import HeaderLogo from "components/Header";
 import HeaderTop from "components/HeaderTop";
 import NavBar from "containers/NavBar";
+import AccordionProducts from "containers/Products/Accordion";
 import { NextPage } from "next";
 import React from "react";
 
@@ -10,7 +12,8 @@ const Index: NextPage = () => {
       <HeaderTop />
       <HeaderLogo />
       <NavBar />
-      <h1>Produtos</h1>
+      <AccordionProducts />
+      <FooterSite />
     </>
   );
 };
