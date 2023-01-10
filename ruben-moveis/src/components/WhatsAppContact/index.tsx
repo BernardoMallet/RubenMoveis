@@ -11,7 +11,7 @@ const WhatsAppPopup = () => {
         href="https://api.whatsapp.com/send?phone=5521999049917&text=RubenMóveis"
       >
         <Box
-          sx={{ float: "right", marginTop: "4px", position: "fixed", right: 5  }}
+          sx={{ float: "right", marginTop: "4px", position: "fixed", right: 5 , zIndex: "999" }}
         >
           <Fab color="success" aria-label="click">
             <WhatsAppIcon />

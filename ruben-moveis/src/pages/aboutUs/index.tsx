@@ -1,6 +1,10 @@
+import FooterSite from "components/Footer";
 import HeaderLogo from "components/Header";
 import HeaderTop from "components/HeaderTop";
+import WhatsAppPopup from "components/WhatsAppContact";
+import AboutUs from "containers/AboutUs";
 import NavBar from "containers/NavBar";
+import { Avatar } from "material-ui";
 import { NextPage } from "next";
 import React from "react";
 
@@ -10,7 +14,9 @@ const Index: NextPage = () => {
       <HeaderTop />
       <HeaderLogo />
       <NavBar />
-      <h1>Sobre nós</h1>
+      <WhatsAppPopup/>
+      <AboutUs />
+      <FooterSite />
     </>
   );
 };
